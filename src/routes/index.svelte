@@ -1,62 +1,21 @@
 <script>
-  import { Button as CarbonButton } from "carbon-components-svelte";
+  import { Tile } from "carbon-components-svelte";
 </script>
-
-<style>
-  h1,
-  figure,
-  p {
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  h1 {
-    font-size: 2.8em;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 0 0 0.5em 0;
-  }
-
-  figure {
-    margin: 0 0 1em 0;
-  }
-
-  img {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 0 1em 0;
-  }
-
-  p {
-    margin: 1em auto;
-  }
-
-  @media (min-width: 480px) {
-    h1 {
-      font-size: 4em;
-    }
-  }
-</style>
 
 <svelte:head>
   <title>Sapper project template</title>
 
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/carbon-components/css/carbon-components.min.css" />
 </svelte:head>
 
 <h1>Great success!</h1>
 
-<figure>
+<Tile>
   <img alt="Success Kid" src="successkid.jpg" />
-  <figcaption>Have fun with Sapper!</figcaption>
-</figure>
+  <p>Have fun with Sapper!</p>
+</Tile>
 
 <p>
   <strong>
     Try editing this file (src/routes/index.svelte) to test live reloading.
   </strong>
 </p>
-
-<CarbonButton>Primary</CarbonButton>

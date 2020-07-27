@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang='en'>
+
 <head>
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width,initial-scale=1.0'>
@@ -19,7 +20,10 @@
 	<!-- This contains the contents of the <svelte:head> component, if
 	     the current page has one -->
 	%sapper.head%
+
+	<link rel="stylesheet" href="https://unpkg.com/carbon-components/css/carbon-components.min.css" />
 </head>
+
 <body>
 	<!-- The application will be rendered inside this element,
 	     because `src/client.js` references it -->
@@ -30,4 +34,5 @@
 	     initialise the router -->
 	%sapper.scripts%
 </body>
+
 </html>
