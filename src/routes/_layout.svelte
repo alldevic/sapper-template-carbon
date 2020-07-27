@@ -1,10 +1,10 @@
 <script>
-  import Nav from "../components/Nav.svelte";
+  import MinimalNav from "../components/MinimalNav.svelte";
   import { Content } from "carbon-components-svelte";
   export let segment;
 </script>
 
-<Nav {segment} />
+<MinimalNav {segment} />
 
 <Content>
   <slot />
