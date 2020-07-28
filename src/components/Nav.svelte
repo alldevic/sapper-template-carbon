@@ -13,7 +13,7 @@
     HeaderPanelDivider,
     SideNav,
     SideNavLink,
-    SideNavItems,
+    SideNavItems
   } from "carbon-components-svelte";
 
   import SettingsAdjust20 from "carbon-icons-svelte/lib/SettingsAdjust20";
@@ -29,7 +29,7 @@
     title: "Account",
     tabindex: "0",
     focusable: false,
-    style: undefined,
+    style: undefined
   };
 
   let iNotifications = {
@@ -39,7 +39,7 @@
     title: "Notifications",
     tabindex: "0",
     focusable: false,
-    style: undefined,
+    style: undefined
   };
 
   let iSettings = {
@@ -49,7 +49,7 @@
     title: "Settings",
     tabindex: "0",
     focusable: false,
-    style: undefined,
+    style: undefined
   };
 </script>
 
@@ -71,6 +71,10 @@
       href="blog"
       text="Blog"
       aria-current={segment === 'blog' ? 'page' : undefined} />
+    <HeaderNavItem
+      href="login"
+      text="Login"
+      aria-current={segment === 'login' ? 'page' : undefined} />
   </HeaderNav>
   <HeaderUtilities>
     <HeaderAction type="Notifications" icon={iNotifications}>
@@ -86,7 +90,7 @@
     </HeaderAction>
   </HeaderUtilities>
 </Header>
-<SideNav bind:isOpen={isSideNavOpen}>
+<!-- <SideNav bind:isOpen={isSideNavOpen}>
   <SideNavItems>
     <SideNavLink
       text="Home"
@@ -104,4 +108,4 @@
       href="blog"
       aria-current={segment === 'blog' ? 'page' : undefined} />
   </SideNavItems>
-</SideNav>
+</SideNav> -->
